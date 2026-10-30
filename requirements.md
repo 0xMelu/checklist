@@ -1,14 +1,14 @@
-# Job Title: Create a website for “Restaurant” using HTML, CSS, JavaScript, and Bootstrap framework.
+# Job Title: Create a website for “Restaurant” using HTML, CSS, JavaScript, and Bootstrap framework
 
-## Conditions: 
-1. Work must be carried out in a safe manner and according to coding standards 
-2. Open-source resources can be used   
-3. Written code must be clean & errors free 
-Equipment: 
-1.  Personal computer /laptop, Internet. 
+## Conditions
+1. Work must be carried out in a safe manner and according to coding standards
+2. Open-source resources can be used
+3. Written code must be clean & errors free
 
-### Software: Web browser, IDE.
-### Requirements of website: 
+## Equipment: Personal computer /laptop, Internet
+
+### Software: Web browser, IDE
+### Requirements of website
 
     1. 6 Page website 
         a. Homepage:  
@@ -24,12 +24,12 @@ price, and “Order Now” button).
             vi. Customer Testimonials Section (at least 2 reviews in Bootstrap cards). 
             vii. Newsletter Subscription Section. 
             viii. Big Footer Section (Restaurant info, quick links, timings, social 
-media). 
+media).
 ix. Footer Section (copyright).  
     b. Menu Page :  
-            i. Breadcrumb Section. 
+            i. Breadcrumb Section.
             ii. Food Categories Section (Accordion – Starters, Main Course, Desserts, 
-Drinks) – left panel. 
+Drinks) – left panel.
             iii. Menu Items Section (Bootstrap cards with food image, title, price, “Add 
 to Cart/Order” button) – right panel. 
             iv. Pagination for menu items.  
