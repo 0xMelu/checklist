@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse seasonal starters, mains, desserts, and drinks at Saffron & Stone.">
+  <title>Our Menu | Saffron & Stone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-banner"><div class="container"><span class="eyebrow">COOKED WITH THE SEASONS</span><h1>Our menu</h1><p>A few familiar favorites and something new every time.</p></div></section>
+    <div class="container"><nav aria-label="breadcrumb"><ol class="breadcrumb custom-breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active" aria-current="page">Menu</li></ol></nav></div>
+    <section class="container section-top">
+      <div class="row g-5">
+        <aside class="col-lg-3">
+          <div class="menu-sidebar">
+            <span class="eyebrow">EXPLORE</span>
+            <h2>Food categories</h2>
+            <div class="accordion accordion-flush category-accordion" id="categoryAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#starters" aria-expanded="true">Starters <span class="category-count">3</span></button></h3>
+                <div id="starters" class="accordion-collapse collapse show" data-bs-parent="#categoryAccordion"><div class="accordion-body"><button class="category-link active" data-category="all">All dishes</button><button class="category-link" data-category="starter">Small plates</button></div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mains">Main course <span class="category-count">3</span></button></h3>
+                <div id="mains" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion"><div class="accordion-body"><button class="category-link" data-category="main">House favorites</button></div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#desserts">Desserts <span class="category-count">2</span></button></h3>
+                <div id="desserts" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion"><div class="accordion-body"><button class="category-link" data-category="dessert">Something sweet</button></div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#drinks">Drinks <span class="category-count">2</span></button></h3>
+                <div id="drinks" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion"><div class="accordion-body"><button class="category-link" data-category="drink">From the bar</button></div></div>
+              </div>
+            </div>
+            <div class="sidebar-note"><i class="bi bi-info-circle"></i><p>Our menu changes with the market. Please let us know about any allergies.</p></div>
+          </div>
+        </aside>
+        <div class="col-lg-9">
+          <div class="menu-toolbar"><div><span class="eyebrow">FRESH FROM OUR KITCHEN</span><h2>Made to be shared.</h2></div><span class="menu-result-count" id="menuResultCount">Showing 1–6 of 10 dishes</span></div>
+          <div class="row g-4" id="menuGrid">
+            <div class="col-md-6 col-xl-4 menu-item" data-category="starter">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="Seasonal soup with herbs"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Market Soup</h3><span class="price">$12</span></div><p class="card-text">Today's garden vegetables, warm sourdough.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="starter">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="Market greens with seasonal vegetables"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Market Garden Salad</h3><span class="price">$18</span></div><p class="card-text">Whipped feta, toasted seeds, bright citrus.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="starter">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="A bowl of house-made soup"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Whipped Ricotta</h3><span class="price">$14</span></div><p class="card-text">Local honey, garden thyme, grilled bread.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="main">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="Fresh handmade pasta with parmesan"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Sunday Table Pasta</h3><span class="price">$24</span></div><p class="card-text">Slow-braised tomato, basil, aged parmesan.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="main">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="Chef's market fish with vegetables"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Market Fish</h3><span class="price">$32</span></div><p class="card-text">Lemon beurre blanc, asparagus, fresh herbs.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="main">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="Stone-baked margherita pizza"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Garden Margherita</h3><span class="price">$22</span></div><p class="card-text">Sourdough, fior di latte, tomato, basil.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="dessert">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="Fresh berry dessert with cream"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Strawberry Shortcake</h3><span class="price">$13</span></div><p class="card-text">Buttermilk biscuit, berries, soft cream.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="dessert">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="Glazed pastry for dessert"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Olive Oil Cake</h3><span class="price">$11</span></div><p class="card-text">Citrus glaze, crème fraîche, sea salt.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="drink">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="A sparkling glass of the house garden spritz"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">Garden Spritz</h3><span class="price">$15</span></div><p class="card-text">Elderflower, sparkling wine, garden mint.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+            <div class="col-md-6 col-xl-4 menu-item" data-category="drink">
+              <article class="card dish-card h-100"><a class="dish-photo-link" href="dish.html"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" class="card-img-top" alt="A carefully made evening cocktail"></a><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="card-title">House Lemonade</h3><span class="price">$8</span></div><p class="card-text">Fresh lemon, wildflower honey, sparkling water.</p><button class="btn btn-outline-dark btn-sm" type="button" data-menu-order>Add to order <i class="bi bi-bag-plus ms-1"></i></button></div></article>
+            </div>
+          </div>
+          <nav class="mt-5" aria-label="Menu pagination"><ul class="pagination justify-content-center" id="menuPagination"><li class="page-item active"><button class="page-link" data-page="1" aria-current="page">1</button></li><li class="page-item"><button class="page-link" data-page="2">2</button></li></ul></nav>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
